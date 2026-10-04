@@ -73,18 +73,6 @@ Download buttons appear in the header, hero, footer, About page, and command pal
 
 **Certificates** — PDFs under `public/certificates/` match paths in `src/data/certifications.ts`.
 
-## Deploy on Vercel
-
-This app is a standard Next.js site (Server Components, Server Actions, one API route). **Vercel alone is enough** for the full portfolio: pages, contact form, and the assistant API. You do not need Netlify, Render, or a separate backend unless you prefer them for other reasons.
-
-1. Push this repo to GitHub and import the project in [Vercel](https://vercel.com).
-2. Framework preset: **Next.js** (default). Build: `npm run build`. Install: `npm install`.
-3. Add environment variables in the Vercel project (`RESEND_API_KEY`, `CONTACT_EMAIL`, `SITE_URL`, and optionally `AI_API_KEY`).
-4. Set `SITE_URL` to your production URL (e.g. `https://your-domain.vercel.app`).
-5. After verifying a domain in Resend, set `RESEND_FROM_EMAIL` for reliable contact delivery.
-
-Netlify and Render also support Next.js, but Vercel is the simplest fit for this stack and is maintained by the Next.js team.
-
 ## Stack
 
 Next.js 16, React 19, TypeScript, Tailwind CSS v4, shadcn/ui, Motion, Zod, Resend.
